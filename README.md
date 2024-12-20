@@ -166,7 +166,6 @@ Tuned dt classifier	0.810799	0.808149	0.80678	0.809524	0.81078
 > Features with short bars are least important e.g country,credit card,gender.
 > Use insights from the top features to make informed business decisions.
 
-
 ### ACHIEVEMENTS OF OBJECTIVES
 1. Predict Customer Churn
 The Random Forest Classifier has demonstrated excellent predictive power with 85.5% accuracy and a high ROC-AUC of 0.9283.
@@ -184,11 +183,18 @@ If the bank acts on predictions and insights, business performance will improve.
 
 ### CONCLUSION
 
->The tuned Decision Tree Classifier did not perform as expected.
->The analysis has achieved all the objectives.
->Random Forest classifier is recomended as the best model in this project as it has the highest accuracy,Recall,Precision,roc_auc score ensuring reliable churn 
- prediction and actionable insights for the ABC bank.
->Random Forest Classifier is the clear winner for this problem, both before and after tuning.
+> The tuned Decision Tree Classifier did not perform as expected.
+> The analysis has achieved all the objectives.
+> Random Forest classifier is recomended as the best model in this project as it has the highest accuracy,Recall,Precision,roc_auc score ensuring reliable churn 
+  prediction and actionable insights for the ABC bank.
+> Random Forest Classifier is the clear winner for this problem, both before and after tuning.
 
 ### RECOMMENDATIONS
 
+1. Focus on Random Forest classifier for final implementation and further optimization.
+
+2. Use Feature importance analysis to provide actionable insights,focus on the most influential features.
+
+3. Customer feedbacks and Surveys to monitor complains and understand areas of improvement.
+
+4. Implement loyalty programs to enhance customer experience.
