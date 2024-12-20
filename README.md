@@ -127,14 +127,35 @@ weighted avg       0.86      0.86      0.86      4778
 
 ![image](https://github.com/user-attachments/assets/78724197-b67a-4055-91af-541d4450add7)
 
->The high values of True Positives(2020)  and True Negatives(2073) above shows the model is correctly predicting positives and negatives effectively.
+> The high values of True Positives(2020)  and True Negatives(2073) above shows the model is correctly predicting positives and negatives effectively.
 False positives(353) and False Negatives(332) indicates where the model is making errors.
 
 ![image](https://github.com/user-attachments/assets/1d273ee9-8556-4532-944d-2dddda27e581)
 
->from the above,AUC_ROC is the best performing classification metrivcs with 0.93.
->ROC_AUC of 0.93  indicates  a higher Area Under the Curve (AUC)  hence showing the model has a strong ability to distinguish between the positive and negative classes.High positive rate indicate the model correctly identifies a high propotion of positive instances.
->The Random Guess provide baseline for comparison.
->
+> from the above,AUC_ROC is the best performing classification metrivcs with 0.93.
+> ROC_AUC of 0.93  indicates  a higher Area Under the Curve (AUC)  hence showing the model has a strong ability to distinguish between the positive and negative 
+  classes.
+> High positive rate indicate the model correctly identifies a high propotion of positive instances.
+> The Random Guess provide baseline for comparison.
 
-7. Model Evaluation.Evaluate model performance using classification metrics like accuracy, precision, recall, F1 score,         confusion matrix, and AUC-ROC.
+### Hyperparameter Tuning 
+
+ Model	             Accuracy	     F1	  precision	Recall	roc_auc
+Tuned dt classifier	0.810799	0.808149	0.80678	0.809524	0.81078
+
+
+  ### Model Evaluation.
+> Evaluate model performance using classification metrics like accuracy, precision, recall, F1 score,confusion matrix, and AUC-ROC.
+
+               Model         Accuracy    F1      precision    Recall   roc_auc
+0        LogisticRegression  0.788824  0.789045   0.776224  0.802296  0.862150
+1  Decision Tree Classifier  0.793010  0.794941   0.775799  0.815051  0.793346
+2  Random Forest Classifier  0.855797  0.854795   0.847472  0.862245  0.929584
+3       Tuned dt classifier  0.810799  0.808149   0.806780  0.809524  0.810780
+
+> The Random Forest outperforms all other models,it has the highest ROC_AUC of 0.927031.
+> Tuned Decision Tree performs better than base Decision tree. but still it is outperformed by Random Forest.
+> Logistic Regression performs well but not like Random Forest or Tuned Decision Tree.
+> Base Decision tree falls behind the Tuned.
+
+
